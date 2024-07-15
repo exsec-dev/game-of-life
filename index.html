@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neuething-sans-test" rel="stylesheet">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Game of Life</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="info-container">
+                <h1>Conway's Game of Life</h1>
+                <h4>Source code: <a href="https://github.com/exsecantb/game-of-life">github.com/exsecantb</a></h4>
+            </div>
+            <div class="input-row">
+                <div class="input-container">
+                    <input
+                        type="number"
+                        id="width-input"
+                        required
+                        placeholder="Число клеток по ширине"
+                        value="400"
+                        min="10"
+                        max="10000"
+                    />
+                    <div class="time">Loop time:<div id="stopwatch">0</div>ms</div>
+                </div>
+                <div class="input-container">
+                    <button id="create-button" class="main-button">Start</button>
+                    <button id="random-button">Randomize</button>
+                    <button id="stop-button" disabled>Stop</button>
+                    <button id="reset-button">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <canvas id="grid-container"></canvas>
+        </div>
+        <h5 class="post-title">Тестовое задание для ИНИТИ - Прожирко Екатерина</h5>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
