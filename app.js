@@ -43,10 +43,9 @@ export class Grid {
         ctx.canvas.cells = new Array(this.height).fill(null).map(() => new Array(this.width).fill(null));
         const rect = this.container.getBoundingClientRect();
 
-        // Background fill
         ctx.fillStyle = BG_COLOR;
         ctx.fillRect(0, 0, rect.width, rect.height);
-        
+
         for (let i = 0; i < this.height; i++) {
             for (let j = 0; j < this.width; j++) {
                 ctx.strokeStyle = STROKE_COLOR;

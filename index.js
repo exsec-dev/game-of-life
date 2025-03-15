@@ -48,3 +48,7 @@ stopButton.addEventListener('click', () => {
 
     game.stop();
 });
+
+window.addEventListener("resize", () => {
+    location.reload();
+});
